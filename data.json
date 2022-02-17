@@ -1,0 +1,25 @@
+[
+   {
+      "string": "lol",
+      "integer": "223117",
+      "float": "2.277",
+      "date": "2022-02-28",
+      "boolean": "false",
+      "task": "wdad",
+      "complete": true
+   },
+   {
+      "string": "Mobile_legend",
+      "integer": "2021",
+      "float": "123,456",
+      "date": "2022-02-17",
+      "boolean": "true"
+   },
+   {
+      "string": "fawfaw",
+      "integer": "1",
+      "float": "8.76",
+      "date": "2022-02-17",
+      "boolean": "false"
+   }
+]
