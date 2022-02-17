@@ -58,14 +58,17 @@ app.get('/edit/:id', function(req,res){
     const id = req.params.id
     res.render('edit', {data: data[id]})
 })
-
-
-
-app.get('/edit/:id', function(req,res){
+app.post('/edit/:id', function (req, res) {
     const id = req.params.id
-    res.render('edit', {data: data[id]})
-})
-
+    data[id].string = req.body.string
+    data[id].integer = req.body.integer
+    data[id].float = req.body.float
+    data[id].date = req.body.date
+    data[id].boolean = JSON.parse(req.body.boolean)
+    //data[id].complete = JSON.parse(req.body.complete)
+    fs.writeFileSync('data.json', JSON.stringify(data, null, 3), 'utf-8')
+    res.redirect('/')
+  })
 
 app.listen(3000, function(){
     console.log('web berjalan di port 3000')

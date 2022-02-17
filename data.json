@@ -9,17 +9,17 @@
       "complete": true
    },
    {
-      "string": "Mobile_legend",
-      "integer": "2021",
-      "float": "123,456",
+      "string": "Tencent",
+      "integer": "999",
+      "float": "999,999",
       "date": "2022-02-17",
-      "boolean": "true"
+      "boolean": true
    },
    {
-      "string": "fawfaw",
-      "integer": "1",
-      "float": "8.76",
+      "string": "Tencent",
+      "integer": "75",
+      "float": "16,99",
       "date": "2022-02-17",
-      "boolean": "false"
+      "boolean": true
    }
 ]

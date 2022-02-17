@@ -27,33 +27,34 @@
                 <div class="mb-3 row">
                     <label for="string" class="col-sm-2 col-form-label">String</label>
                     <div class="col-sm-10">
-                        <input type="text" id="string" name="string">
+                        <input type="text" id="string" name="string" value="<% data.string %>">
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label for="integer" class="col-sm-2 col-form-label">Integer</label>
                     <div class="col-sm-10">
-                        <input type="text" id="integer" name="integer">
+                        <input type="text" id="integer" name="integer" value="<% data.integer %>">>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label for="float" class="col-sm-2 col-form-label">Float</label>
                     <div class="col-sm-10">
-                        <input type="text" id="float" name="float">
+                        <input type="text" id="float" name="float" value="<% data.float %>">>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label for="date" class="col-sm-2 col-form-label">Date</label>
                     <div class="col-sm-10">
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="date" value="<% data.date %>">>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="boolean" class="col-sm-2 col-form-label">Boolean</label>
-                    <select class="label-select" aria-label="Disabled select example" class="form-label" id="boolean" name="boolean">
+                    <select class="label-select" aria-label="Disabled select example" class="form-label" id="boolean"
+                        name="boolean">
                         <option selected>Choose the boolean</option>
-                        <option value="true">true</option>
                         <option value="false">false</option>
+                        <option value="true" <%=data.boolean ? 'selected' : '' %>>true</option>
                     </select>
                 </div>
             </div>
